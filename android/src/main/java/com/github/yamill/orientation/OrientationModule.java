@@ -76,7 +76,11 @@ public class OrientationModule extends ReactContextBaseJavaModule implements Lif
         if (activity == null) {
             return;
         }
-        activity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+              try {
+            activity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);        }
+        catch(Exception e) {
+
+        }
     }
 
     @ReactMethod
@@ -85,7 +89,11 @@ public class OrientationModule extends ReactContextBaseJavaModule implements Lif
         if (activity == null) {
             return;
         }
-        activity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE);
+          try {
+            activity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE);
+        }catch(Exception e) {
+
+        }
     }
 
     @ReactMethod
@@ -94,7 +102,11 @@ public class OrientationModule extends ReactContextBaseJavaModule implements Lif
         if (activity == null) {
             return;
         }
-        activity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+         try {
+            activity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        }catch(Exception e) {
+
+        }
     }
 
     @ReactMethod
@@ -103,7 +115,11 @@ public class OrientationModule extends ReactContextBaseJavaModule implements Lif
         if (activity == null) {
             return;
         }
-        activity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_REVERSE_LANDSCAPE);
+        try {
+            activity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_REVERSE_LANDSCAPE);
+        }catch(Exception e) {
+
+        }
     }
 
     @ReactMethod
